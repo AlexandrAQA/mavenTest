@@ -6,6 +6,7 @@
         <classes>
             <class name="tests.AlertsTest"/>
             <class name="tests.IframeTest"/>
+            <class name="tests.InputsTest"/>
         </classes>
     </test>
     <test name="Edge">
