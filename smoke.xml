@@ -7,11 +7,6 @@
             <class name="tests.AlertsTest"/>
             <class name="tests.IframeTest"/>
             <class name="tests.InputsTest"/>
-        </classes>
-    </test>
-    <test name="Edge">
-        <parameter name="browser" value="edge"/>
-        <classes>
             <class name="tests.JsExecutorTest"/>
             <class name="tests.MainTest"/>
         </classes>
