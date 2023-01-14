@@ -3,5 +3,6 @@
 <suite name="Smoke and Regression TestSuit">
     <suite-files>
         <suite-file path="smoke.xml"/>
+        <suite-file path="regression.xml"/>
     </suite-files>
 </suite>
