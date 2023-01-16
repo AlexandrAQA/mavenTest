@@ -17,7 +17,7 @@ public class InputsTest extends BaseTest{
     }
     @Test
     public void TestInputsFail(){
-        Assert.fail(); //to fail test
+        Assert.fail("Demonstration"); //to fail test
         driver.findElement(By.linkText("Inputs")).click();
         WebElement input = driver.findElement(By.tagName("input"));
         input.sendKeys(Keys.ARROW_UP);
