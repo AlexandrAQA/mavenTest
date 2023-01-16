@@ -1,5 +1,8 @@
 package tests;
 
+import io.qameta.allure.Issue;
+import io.qameta.allure.Link;
+import io.qameta.allure.TmsLink;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
@@ -15,6 +18,9 @@ public class InputsTest extends BaseTest{
 
         driver.navigate().back();
     }
+    @Issue("Bug-01")
+    @TmsLink("case=79")
+    @Link("https://github.com/AlexandrAQA") //url on docs or important info
     @Test
     public void TestInputsFail(){
         Assert.fail("Demonstration"); //to fail test
