@@ -31,7 +31,6 @@ public class InputsTest extends BaseTest{
         driver.findElement(By.linkText("Inputs")).click();
         WebElement input = driver.findElement(By.tagName("input"));
         input.sendKeys(Keys.ARROW_UP);
-
         driver.navigate().back();
     }
 }
