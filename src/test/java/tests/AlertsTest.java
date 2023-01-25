@@ -6,10 +6,10 @@ import org.testng.annotations.Test;
 
 import static org.testng.AssertJUnit.assertEquals;
 
-public class AlertsTest extends BaseTest{
+public class AlertsTest extends BaseTest {
 
     @Test
-    public void alertsTest(){
+    public void alertsTest() {
         //1.find link 'JavaScript Alerts'
         driver.findElement(By.linkText("JavaScript Alerts")).click();
         //find button with text 'Click for JS Alert' then click
@@ -21,7 +21,7 @@ public class AlertsTest extends BaseTest{
         //save appeared text to the variable
         String result = driver.findElement(By.id("result")).getText();
         //validate TEXT
-        assertEquals(result,"You successfully clicked an alert");
+        assertEquals(result, "You successfully clicked an alert");
 
 
         //2.find the second button and click

@@ -33,5 +33,18 @@ public class InputsTest extends BaseTest{
         input.sendKeys(Keys.ARROW_UP);
         driver.navigate().back();
     }
+
+    @Issue("Bug-01")
+    @TmsLink("case=79")
+    @Link("https://github.com/AlexandrAQA") //url on docs or important info
+    @Test
+    public void TestInputsFail2(){
+        //Assert.fail("Demonstration"); //to fail test
+        driver.findElement(By.linkText("Inputs")).click();
+        WebElement input = driver.findElement(By.tagName("input"));
+        System.out.println("Bug-01");
+        input.sendKeys(Keys.ARROW_UP);
+        driver.navigate().back();
+    }
 }
 

@@ -89,6 +89,7 @@
 
     </plugin>
     <!-- https://mvnrepository.com/artifact/io.qameta.allure/allure-maven -->
+    <!-- allure report part 2 0:58:00 -->
     <plugin>
         <groupId>io.qameta.allure</groupId>
         <artifactId>allure-maven</artifactId>

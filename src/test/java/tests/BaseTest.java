@@ -18,14 +18,14 @@ public class BaseTest {
     @Parameters("browser")
     @BeforeMethod
     public void setUp(String browser) {
-        if (browser.equals("chrome")){
+        if (browser.equals("chrome")) {
             WebDriverManager.chromedriver().setup();
             ChromeOptions options = new ChromeOptions();
             options.setHeadless(true);//we can't see how browser executes test
             driver = new ChromeDriver();
-        } else if(browser.equals("edge")){
+        } else if (browser.equals("edge")) {
             WebDriverManager.edgedriver().setup();
-            driver=new EdgeDriver();
+            driver = new EdgeDriver();
         }
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));

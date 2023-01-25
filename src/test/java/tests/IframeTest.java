@@ -33,7 +33,8 @@ public class IframeTest extends BaseTest {
         Assert.assertEquals(text, "Your content goes here.");
         driver.switchTo().defaultContent();
             driver.findElement(By.cssSelector("button[title='Align center'")).click();
-            //throw new IllegalArgumentException(); //just for yellow allure report
+            //throw new IllegalArgumentException();
+            // just for yellow allure report
 
 
     }
